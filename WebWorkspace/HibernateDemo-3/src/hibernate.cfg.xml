@@ -1,0 +1,33 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- DBConnection -->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/hibernate_db</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>
+		<property name="pool_size">0</property>
+		<!-- Dialect -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		
+		<!-- Show SQL to Console -->
+		<property name="show_sql">true</property>
+		
+		<!-- drop and recreate -->
+		<property name="hbm2ddl.auto">create</property>
+		
+		<!-- second level cache -->
+		<property name="cache.provider_class">NOCacheProvider</property>
+		
+		<!-- mapping -->
+		<!-- 
+			<mapping class="com.pratap.hbexample.user.User"/>
+		 -->
+		 <mapping resource="Message.hbm.xml"/>	
+		 
+		 
+	</session-factory>
+</hibernate-configuration>

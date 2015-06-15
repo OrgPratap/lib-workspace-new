@@ -1,0 +1,28 @@
+*****************[ READ ME] *****************
+Project Name : Chart&EventListener_UserInput_51510679
+---------------------------------------------------------
+The project is designed to generate the bar chart of sales done by different companies.
+Assumption :
+sales recorded for only 1st 3 month of the year 2014
+sales recorded for only SAMSUNG, LG, iPhone, NOKIA.
+----------------------------------------------------------
+Input :
+Total value needed : 12 inputs 
+1st 3 input is for SAMSUNG
+next 3 input is for LG
+next 3 input is for iPhone
+next 3 input is for NOKIA
+----------------------------------------------------------
+Output :
+Stacked Bar Char for 4 companies' sales detail in the 1st 3 months of the year 2014.
+----------------------------------------------------------
+Limitations : 
+input must be either integer datatype or float/double data type.Other than this input, the program will through exception.
+----------------------------------------------------------
+API Used : JFreeChart (Open source) 
+----------------------------------------------------------
+Author :
+Name     :SATENDRA PRATAP SINGH
+Phone No.:+919424682730
+E-mail   : satendra.s@hcl.com
+-----------------------------------------------------------
